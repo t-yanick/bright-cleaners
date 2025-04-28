@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="bg-light py-5">
       <Helmet>
-        <title>Contact Us | Bright Cleaners</title>
+        <title>Contact Us | Bright Cleaning Services</title>
         <meta name="description" content="Have a question or want to schedule a cleaning? Contact Bright Cleaners today." />
       </Helmet>
 
@@ -38,7 +38,7 @@ const Contact = () => {
             </form>
 
             <div className="mt-5 text-center">
-              <p><strong>Email:</strong> info@brightcleaners.ca</p>
+              <p><strong>Email:</strong> info@brightcleaningservices.ca</p>
               <p><strong>Phone:</strong> +1 450 518 2494</p>
               <p><strong>Address:</strong> 4045 Boulevard Saint-Jean, Dollard-des-Ormeaux, H9G 1X3</p>
             </div>
@@ -46,7 +46,7 @@ const Contact = () => {
             {/* Google Maps Embed */}
             <div className="mt-4">
               <iframe
-                title="Bright Cleaners Location"
+                title="Bright Cleaning Services Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.397853233797!2d-73.83204228446477!3d45.48901573962027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93d7cc7a2a0db%3A0x9266e68cb2a96a0a!2s4045%20Boulevard%20Saint-Jean%2C%20Dollard-des-Ormeaux%2C%20QC%20H9G%201X3%2C%20Canada!5e0!3m2!1sen!2sca!4v1714173212264!5m2!1sen!2sca"
                 width="100%"
                 height="300"

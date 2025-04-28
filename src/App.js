@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -7,10 +8,12 @@ import Services from './pages/Services';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
+      <ScrollToTop />
       <Navbar /> 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,9 +22,10 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer /> 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

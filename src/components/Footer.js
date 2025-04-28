@@ -9,7 +9,7 @@ const Footer = () => {
 
           {/* Company Info */}
           <div className="col-md-4 mb-4">
-            <h5 className="text-uppercase">Bright Cleaners</h5>
+            <h5 className="text-uppercase">Bright Cleaning Services</h5>
             <p>Montreal's trusted cleaning service. Sparkling homes and pristine offices, professionally cleaned every time.</p>
           </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
 
         </div>
         <div className="text-center mt-4">
-          <small>&copy; {new Date().getFullYear()} Bright Cleaners. All rights reserved.</small>
+          <small>&copy; {new Date().getFullYear()} Bright Cleaning Services. All rights reserved.</small>
         </div>
       </div>
     </footer>

@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Bright Cleaners - Montreal’s Trusted Cleaning Service</title>
+        <title>Bright Cleaning Services - Montreal’s Trusted Cleaning Service</title>
         <meta name="description" content="Exceptional cleaning services in Montreal. Book now with Bright Cleaners for residential and commercial spaces." />
       </Helmet>
 
@@ -27,7 +27,7 @@ const Home = () => {
       {/* Why Choose Us */}
       <section className="py-5 text-center bg-white">
         <div className="container">
-          <h2 className="mb-4" data-aos="fade-up">Why Choose Bright Cleaners?</h2>
+          <h2 className="mb-4" data-aos="fade-up">Why Choose Bright Cleaning Services?</h2>
           <div className="row">
             {[
               ["bi-stars", "Experienced Professionals", "Our trained team ensures meticulous cleaning every time."],
@@ -79,7 +79,7 @@ const Home = () => {
           <h2 className="mb-4" data-aos="fade-up">What Our Clients Say</h2>
           <div className="row justify-content-center">
             {[
-              ["Alex R., Montreal", "Bright Cleaners transformed our office space. Professional and efficient!"],
+              ["Alex R., Montreal", "Bright Cleaning Services transformed our office space. Professional and efficient!"],
               ["Sophie L., Laval", "Reliable and thorough. Highly recommend their home cleaning services."]
             ].map(([name, feedback], i) => (
               <div className="col-md-5 mb-4" key={i} data-aos="fade-right" data-aos-delay={i * 200}>

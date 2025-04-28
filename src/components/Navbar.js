@@ -3,10 +3,23 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Needed for collapse toggle
 
 const Navbar = () => {
+  
+  // Function to collapse navbar after clicking a link (for mobile view)
+  const handleNavLinkClick = () => {
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      // Collapse the navbar
+      const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, { toggle: false });
+      bsCollapse.hide();
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div className="container">
-        <Link className="navbar-brand fw-bold text-primary" to="/">Bright Cleaners</Link>
+        <Link className="navbar-brand fw-bold text-primary" to="/" onClick={handleNavLinkClick}>
+          Bright Cleaning Services
+        </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -14,22 +27,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/" onClick={handleNavLinkClick}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>About</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/services">Services</Link>
+              <Link className="nav-link" to="/services" onClick={handleNavLinkClick}>Services</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/testimonials">Testimonials</Link>
+              <Link className="nav-link" to="/testimonials" onClick={handleNavLinkClick}>Testimonials</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>Contact</Link>
             </li>
             <li className="nav-item">
-              <Link className="btn btn-primary ms-2" to="/booking">Book Now</Link>
+              <Link className="btn btn-primary ms-2" to="/booking" onClick={handleNavLinkClick}>Book Now</Link>
             </li>
           </ul>
         </div>
