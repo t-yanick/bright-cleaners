@@ -8,7 +8,7 @@ const Booking = () => {
   return (
     <div className="bg-light py-5">
       <Helmet>
-        <title>Book Cleaning Service | Bright Cleaners</title>
+        <title>Book Cleaning Service | Bright Cleaning Services</title>
         <meta name="description" content="Schedule your professional cleaning service with Bright Cleaners today. Quick and easy booking form." />
       </Helmet>
 

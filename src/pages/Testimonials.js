@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <div className="bg-white py-5">
       <Helmet>
-        <title>Client Testimonials | Bright Cleaners</title>
+        <title>Client Testimonials | Bright Cleaning Services</title>
         <meta name="description" content="See what our satisfied clients say about Bright Cleaners. Real reviews from happy homes and polished offices in Montreal." />
       </Helmet>
 
@@ -38,7 +38,7 @@ const Testimonials = () => {
             <div className="col-md-6 mb-4" key={i} data-aos="fade-up" data-aos-delay={i * 150}>
               <div className="p-4 shadow-sm bg-light rounded d-flex align-items-start h-100">
                 <img
-                  src={`/images/reviewer-${i + 1}.jpg`}
+                  src={`${process.env.PUBLIC_URL}/images/reviewer-${i + 1}.jpg`}
                   alt={`${review.name}`}
                   className="rounded-circle me-3"
                   style={{ width: '60px', height: '60px', objectFit: 'cover' }}
@@ -53,7 +53,7 @@ const Testimonials = () => {
         </div>
 
         <div className="text-center mt-5">
-          <h5>Experience the Bright Cleaners difference.</h5>
+          <h5>Experience the Bright Cleaning Services difference.</h5>
           <a href="/booking" className="btn btn-primary mt-3">Book Now</a>
         </div>
 

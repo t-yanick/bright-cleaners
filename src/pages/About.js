@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="bg-white py-5">
       <Helmet>
-        <title>About Us | Bright Cleaners</title>
+        <title>About Us | Bright Cleaning Services</title>
         <meta name="description" content="Learn about Bright Cleaners—Montreal’s trusted team delivering professional, eco-conscious cleaning services for homes and businesses." />
       </Helmet>
 
@@ -15,15 +15,15 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-md-6 mb-4" data-aos="fade-right">
             <img
-                src="/images/bright-cleaners-team.png"
-                alt="Bright Cleaners team at work"
+                src={`${process.env.PUBLIC_URL}/images/bright-cleaners-team.png`}
+                alt="Bright Cleaning Services team at work"
                 className="img-fluid rounded shadow"
             />
           </div>
           <div className="col-md-6" data-aos="fade-left">
             <h4>Our Mission</h4>
             <p>
-              At Bright Cleaners, we’re on a mission to make your environment healthier, happier, and cleaner. Whether it’s your home or business, we deliver top-tier cleaning with care, precision, and consistency.
+              At Bright Cleaning Services, we’re on a mission to make your environment healthier, happier, and cleaner. Whether it’s your home or business, we deliver top-tier cleaning with care, precision, and consistency.
             </p>
             <h4>Our Values</h4>
             <ul className="list-unstyled">

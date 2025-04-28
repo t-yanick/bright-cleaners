@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="bg-light py-5">
       <Helmet>
-        <title>Our Services | Bright Cleaners</title>
+        <title>Our Services | Bright Cleaning Services</title>
         <meta name="description" content="Explore our cleaning services including residential, commercial, move-in/out, and deep cleaning. Serving Montreal with precision and care." />
       </Helmet>
 
@@ -43,7 +43,7 @@ const Services = () => {
             <div className="col-md-6 col-lg-3" key={i} data-aos="fade-up" data-aos-delay={i * 100}>
               <div className="card h-100 border-0 shadow-sm text-center">
                 {service.image && (
-                  <img src={service.image} alt={service.title} className="card-img-top" style={{ height: '180px', objectFit: 'cover' }} />
+                  <img src={`${process.env.PUBLIC_URL}${service.image}`} alt={service.title} className="card-img-top" style={{ height: '180px', objectFit: 'cover' }} />
                 )}
                 <div className="card-body">
                   <i className={`bi ${service.icon} fs-2 text-primary mb-2`}></i>
