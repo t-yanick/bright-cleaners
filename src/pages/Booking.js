@@ -1,71 +1,55 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
 
 const Booking = () => {
- const [selectedDate, setSelectedDate] = useState(null);
   return (
     <div className="bg-light py-5">
       <Helmet>
-        <title>Book Cleaning Service | Bright Cleaning Services</title>
-        <meta name="description" content="Schedule your professional cleaning service with Bright Cleaners today. Quick and easy booking form." />
+        <title>Book a Cleaning | Bright Cleaning Services</title>
+        <meta name="description" content="Easily book a professional cleaning service online with Bright Cleaning Services. Secure payments and flexible scheduling available." />
       </Helmet>
 
       <div className="container">
-        <h2 className="text-center mb-4">Book a Cleaning Service</h2>
-        <p className="text-center text-muted mb-5">Fill out the form below and we’ll get back to you shortly.</p>
+        <h2 className="text-center mb-4">Schedule Your Cleaning</h2>
+        <p className="text-center text-muted mb-5">
+          Ready for a sparkling clean home or office? Book your cleaning session in just a few clicks!
+        </p>
 
-        <form className="row g-3 bg-white p-4 shadow rounded">
-          <div className="col-md-6">
-            <label htmlFor="name" className="form-label">Full Name</label>
-            <input type="text" className="form-control" id="name" placeholder="Jane Doe" required />
-          </div>
+        {/* Embedded MMIO Form */}
+        <div className="mb-5">
+          <iframe
+            src="https://modernmaid.io/iframes/quotation-form/dd8aa21bf5a31dc5f6bfefa426d767ea"
+            width="100%"
+            height="2500"
+            style={{ border: 0 }}
+            title="Bright Cleaning Services Booking Form"
+          ></iframe>
+        </div>
 
-          <div className="col-md-6">
-            <label htmlFor="email" className="form-label">Email Address</label>
-            <input type="email" className="form-control" id="email" placeholder="jane@example.com" required />
-          </div>
-
-          <div className="col-md-6">
-            <label htmlFor="phone" className="form-label">Phone Number</label>
-            <input type="tel" className="form-control" id="phone" placeholder="+1 (514) 123-4567" required />
-          </div>
-
-          <div className="col-md-6">
-            <label htmlFor="service" className="form-label">Service Type</label>
-            <select id="service" className="form-select" required>
-              <option defaultValue="">Choose...</option>
-              <option>Residential Cleaning</option>
-              <option>Commercial Cleaning</option>
-              <option>Move-In/Out Cleaning</option>
-              <option>Deep Cleaning</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-            <div className="col-12">
-                <label htmlFor="date" className="form-label">Preferred Date</label>
-                <DatePicker
-                    selected={selectedDate}
-                    onChange={(date) => setSelectedDate(date)}
-                    className="form-control"
-                    placeholderText="Select a date"
-                    minDate={new Date()}
-                    id="date"
-                    required
-                />
+        {/* How It Works Section */}
+        <div className="row text-center g-4">
+          <div className="col-md-4">
+            <div className="p-4 bg-white shadow-sm rounded h-100">
+              <i className="bi bi-calendar-check fs-1 text-primary mb-3"></i>
+              <h5>Pick Your Date</h5>
+              <p className="text-muted">Choose a time that works best for you. We offer flexible scheduling 7 days a week.</p>
             </div>
-
-          <div className="col-12">
-            <label htmlFor="notes" className="form-label">Additional Notes</label>
-            <textarea className="form-control" id="notes" rows="4" placeholder="Tell us more about your space or needs..."></textarea>
           </div>
-
-          <div className="col-12 text-center">
-            <button type="submit" className="btn btn-primary btn-lg mt-3">Submit Booking Request</button>
+          <div className="col-md-4">
+            <div className="p-4 bg-white shadow-sm rounded h-100">
+              <i className="bi bi-bucket fs-1 text-primary mb-3"></i>
+              <h5>We Clean</h5>
+              <p className="text-muted">Our professional cleaners will arrive on time and work their magic!</p>
+            </div>
           </div>
-        </form>
+          <div className="col-md-4">
+            <div className="p-4 bg-white shadow-sm rounded h-100">
+              <i className="bi bi-emoji-smile fs-1 text-primary mb-3"></i>
+              <h5>Enjoy Your Space</h5>
+              <p className="text-muted">Relax and enjoy your freshly cleaned home or office — satisfaction guaranteed.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
