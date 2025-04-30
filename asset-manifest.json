@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bright-cleaners/static/css/main.1bc4c46c.css",
-    "main.js": "/bright-cleaners/static/js/main.479c6d45.js",
-    "static/media/bootstrap-icons.woff?": "/bright-cleaners/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/bright-cleaners/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "index.html": "/bright-cleaners/index.html",
-    "main.1bc4c46c.css.map": "/bright-cleaners/static/css/main.1bc4c46c.css.map",
-    "main.479c6d45.js.map": "/bright-cleaners/static/js/main.479c6d45.js.map"
+    "main.css": "/static/css/main.78c0b1ff.css",
+    "main.js": "/static/js/main.83a3cafd.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/index.html",
+    "main.78c0b1ff.css.map": "/static/css/main.78c0b1ff.css.map",
+    "main.83a3cafd.js.map": "/static/js/main.83a3cafd.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bc4c46c.css",
-    "static/js/main.479c6d45.js"
+    "static/css/main.78c0b1ff.css",
+    "static/js/main.83a3cafd.js"
   ]
 }
