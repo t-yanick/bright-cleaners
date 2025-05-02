@@ -9,6 +9,8 @@ import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
 import ThankYou from './pages/ThankYou';
+import Blog from './pages/Blog';
+import SinglePost from './pages/SinglePost';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<SinglePost />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer /> 
