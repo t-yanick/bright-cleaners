@@ -21,15 +21,15 @@ const Footer = () => {
               method="POST"
             >
               <div className="mb-2">
-                <input type="text" className="form-control" placeholder="Your Name" />
+                <input type="text" name="name" className="form-control" placeholder="Your Name" />
               </div>
               <div className="mb-2">
-                <input type="email" className="form-control" placeholder="Your Email" />
+                <input type="email" name="email" className="form-control" placeholder="Your Email" />
               </div>
               <div className="mb-2">
-                <textarea className="form-control" rows="3" placeholder="Your Message"></textarea>
+                <textarea name="message" className="form-control" rows="3" placeholder="Your Message"></textarea>
               </div>
-              <button className="btn btn-primary w-100 mt-2">Send Message</button>
+              <button type="submit" className="btn btn-primary w-100 mt-2">Send Message</button>
             </form>
           </div>
 
