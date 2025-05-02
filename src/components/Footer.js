@@ -16,7 +16,10 @@ const Footer = () => {
           {/* Contact Form */}
           <div className="col-md-4 mb-4">
             <h5>Contact Us</h5>
-            <form>
+            <form
+              action="https://formspree.io/f/mblogdae"
+              method="POST"
+            >
               <div className="mb-2">
                 <input type="text" className="form-control" placeholder="Your Name" />
               </div>

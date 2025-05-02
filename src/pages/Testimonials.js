@@ -17,7 +17,7 @@ const Testimonials = () => {
             {
               name: "Alex R.",
               city: "Montreal",
-              text: "Bright Cleaners transformed our office. Super professional, great attention to detail, and always on time."
+              text: "Bright Cleaning Services transformed our office. Super professional, great attention to detail, and always on time."
             },
             {
               name: "Sophie L.",
@@ -64,7 +64,7 @@ const Testimonials = () => {
             {/* Form Column */}
             <div className="col-md-6 mb-4">
               <form
-                action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                action="https://formspree.io/f/xdkgeawn"
                 method="POST"
                 className="bg-light p-4 rounded shadow"
               >

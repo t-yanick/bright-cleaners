@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="row justify-content-center">
           <div className="col-md-8">
             <form
-              action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+              action="https://formspree.io/f/mblogdae"
               method="POST"
               className="bg-white p-4 shadow rounded"
             >
