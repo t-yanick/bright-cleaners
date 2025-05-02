@@ -52,7 +52,7 @@ const Contact = () => {
             </form>
 
             <div className="mt-5 text-center">
-              <p><strong>Email:</strong> info@brightcleaningservices.ca</p>
+              <p><strong>Email:</strong> brightcleaningmtl@gmail.com</p>
               <p><strong>Phone:</strong> +1 450 518 2494</p>
               <p><strong>Address:</strong> 4045 Boulevard Saint-Jean, Dollard-des-Ormeaux, H9G 1X3</p>
             </div>
