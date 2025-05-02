@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
+import ThankYou from './pages/ThankYou';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/thank-you" element={<ThankYou />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer /> 

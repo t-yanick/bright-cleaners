@@ -19,6 +19,20 @@ const Footer = () => {
             <form
               action="https://formspree.io/f/mblogdae"
               method="POST"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+                fetch(form.action, {
+                  method: form.method,
+                  body: data,
+                  headers: {
+                    Accept: "application/json",
+                  },
+                }).then(() => {
+                  window.location.replace("/thank-you");
+                });
+              }}
             >
               <div className="mb-2">
                 <input type="text" name="name" className="form-control" placeholder="Your Name" />

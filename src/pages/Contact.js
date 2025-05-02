@@ -18,6 +18,20 @@ const Contact = () => {
             <form
               action="https://formspree.io/f/mblogdae"
               method="POST"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+                fetch(form.action, {
+                  method: form.method,
+                  body: data,
+                  headers: {
+                    Accept: "application/json",
+                  },
+                }).then(() => {
+                  window.location.replace("/thank-you");
+                });
+              }}
               className="bg-white p-4 shadow rounded"
             >
               <div className="mb-3">
