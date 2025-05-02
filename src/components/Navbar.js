@@ -17,9 +17,15 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div className="container">
-        <Link className="navbar-brand fw-bold text-primary" to="/" onClick={handleNavLinkClick}>
-          Bright Cleaning Services
+        <Link className="navbar-brand d-flex align-items-center" to="/" onClick={handleNavLinkClick}>
+          <img
+            src="/images/bcs-logo.jpeg"
+            alt="Bright Cleaning Services logo"
+            style={{ height: '40px', width: '40px', objectFit: 'contain', marginRight: '10px' }}
+          />
+          <span className="fw-bold text-primary">Bright Cleaning Services</span>
         </Link>
+
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
