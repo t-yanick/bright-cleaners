@@ -29,7 +29,7 @@ const Contact = () => {
                     Accept: "application/json",
                   },
                 }).then(() => {
-                  window.location.replace("/thank-you");
+                  window.location.replace("/#/thank-you");
                 });
               }}
               className="bg-white p-4 shadow rounded"

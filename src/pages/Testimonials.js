@@ -77,7 +77,7 @@ const Testimonials = () => {
                       Accept: "application/json",
                     },
                   }).then(() => {
-                    window.location.replace("/thank-you");
+                    window.location.replace("/#/thank-you");
                   });
                 }}
                 className="bg-light p-4 rounded shadow"

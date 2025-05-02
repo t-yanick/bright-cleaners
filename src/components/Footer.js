@@ -30,7 +30,7 @@ const Footer = () => {
                     Accept: "application/json",
                   },
                 }).then(() => {
-                  window.location.replace("/thank-you");
+                  window.location.replace("/#/thank-you");
                 });
               }}
             >
