@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Needed for collapse toggle
 
 const Navbar = () => {
-  
-  // Function to collapse navbar after clicking a link (for mobile view)
+  // Collapse navbar on link click (mobile view)
   const handleNavLinkClick = () => {
     const navbarCollapse = document.getElementById('navbarNav');
     if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-      // Collapse the navbar
-      const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, { toggle: false });
-      bsCollapse.hide();
+      const collapseInstance = window.bootstrap.Collapse.getInstance(navbarCollapse);
+      if (collapseInstance) {
+        collapseInstance.hide();
+      }
     }
   };
 
@@ -37,6 +37,9 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/testimonials" onClick={handleNavLinkClick}>Testimonials</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/blog" onClick={handleNavLinkClick}>Blog</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>Contact</Link>
