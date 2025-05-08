@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/js/bootstrap.bundle.min'; // Needed for collapse toggle
+import { useTranslation } from 'react-i18next';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
   // Collapse navbar on link click (mobile view)
   const handleNavLinkClick = () => {
     const navbarCollapse = document.getElementById('navbarNav');
@@ -12,6 +15,10 @@ const Navbar = () => {
         collapseInstance.hide();
       }
     }
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
@@ -31,27 +38,43 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav align-items-lg-center">
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={handleNavLinkClick}>Home</Link>
+              <Link className="nav-link" to="/" onClick={handleNavLinkClick}>{t('nav_home')}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>About</Link>
+              <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>{t('nav_about')}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/services" onClick={handleNavLinkClick}>Services</Link>
+              <Link className="nav-link" to="/services" onClick={handleNavLinkClick}>{t('nav_services')}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/testimonials" onClick={handleNavLinkClick}>Testimonials</Link>
+              <Link className="nav-link" to="/testimonials" onClick={handleNavLinkClick}>{t('nav_testimonials')}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blog" onClick={handleNavLinkClick}>Blog</Link>
+              <Link className="nav-link" to="/blog" onClick={handleNavLinkClick}>{t('nav_blog')}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>Contact</Link>
+              <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>{t('nav_contact')}</Link>
             </li>
             <li className="nav-item">
-              <Link className="btn btn-primary ms-2" to="/booking" onClick={handleNavLinkClick}>Book Now</Link>
+              <Link className="btn btn-primary ms-2" to="/booking" onClick={handleNavLinkClick}>
+                {t('nav_book')}
+              </Link>
+            </li>
+            <li className="nav-item ms-3 d-flex">
+              <button
+                className="btn btn-sm btn-outline-secondary me-1"
+                onClick={() => changeLanguage('en')}
+              >
+                EN
+              </button>
+              <button
+                className="btn btn-sm btn-outline-secondary"
+                onClick={() => changeLanguage('fr')}
+              >
+                FR
+              </button>
             </li>
           </ul>
         </div>

@@ -12,10 +12,13 @@
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3",
     "date-fns": "^4.1.0",
+    "i18next": "^25.1.1",
+    "i18next-browser-languagedetector": "^8.1.0",
     "react": "^19.1.0",
     "react-datepicker": "^8.3.0",
     "react-dom": "^19.1.0",
     "react-helmet": "^6.1.0",
+    "react-i18next": "^15.5.1",
     "react-router-dom": "^7.5.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
