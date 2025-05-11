@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 const Booking = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://square.site/appointments/buyer/widget/mx5y0typl5fa4a/L4J9D8CW0ECV9.js';
+    script.async = true;
+    document.getElementById('square-booking-widget').appendChild(script);
+  }, []);
+
   return (
     <div className="bg-light py-5">
       <Helmet>
@@ -15,16 +22,8 @@ const Booking = () => {
           Ready for a sparkling clean home or office? Book your cleaning session in just a few clicks!
         </p>
 
-        {/* Embedded MMIO Form */}
-        <div className="mb-5">
-          <iframe
-            src="https://modernmaid.io/iframes/quotation-form/dd8aa21bf5a31dc5f6bfefa426d767ea"
-            width="100%"
-            height="2500"
-            style={{ border: 0 }}
-            title="Bright Cleaning Services Booking Form"
-          ></iframe>
-        </div>
+        {/* Square Booking Embed */}
+        <div id="square-booking-widget" className="mb-5"></div>
 
         {/* How It Works Section */}
         <div className="row text-center g-4">
