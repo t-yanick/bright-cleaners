@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h5>Follow Us</h5>
             <div className="d-flex gap-3 mt-2">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white fs-4">
+              <a href="https://www.facebook.com/share/16Q3DgNRoB/" target="_blank" rel="noopener noreferrer" className="text-white fs-4">
                 <i className="bi bi-facebook"></i>
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white fs-4">
