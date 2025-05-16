@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,7 +15,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Navbar /> 
       <Routes>
@@ -31,7 +31,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer /> 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
