@@ -7,12 +7,17 @@ const Services = () => {
     <div className="bg-light py-5">
       <Helmet>
         <title>Our Services | Bright Cleaning Services</title>
-        <meta name="description" content="Explore our cleaning services including residential, commercial, move-in/out, and deep cleaning. Serving Montreal with precision and care." />
+        <meta
+          name="description"
+          content="Explore our cleaning services including residential, commercial, move-in/out, deep cleaning, and post-construction cleaning. Serving Montreal with precision and care."
+        />
       </Helmet>
 
       <div className="container">
         <h2 className="text-center mb-4">Our Cleaning Services</h2>
-        <p className="text-center text-muted mb-5">We offer professional cleaning tailored to your needs—because every space deserves to shine.</p>
+        <p className="text-center text-muted mb-5">
+          We offer professional cleaning tailored to your needs—because every space deserves to shine.
+        </p>
 
         <div className="row g-4">
           {[
@@ -39,12 +44,23 @@ const Services = () => {
               title: 'Deep Cleaning',
               text: 'Top-to-bottom cleaning service for when your space needs extra attention.',
               image: '/images/service-deep.jpg'
+            },
+            {
+              icon: 'bi-tools',
+              title: 'Post-Construction Cleaning',
+              text: 'After renovation or construction, we clean dust, debris, and residues to leave your space ready to use.',
+              image: '/images/service-move.jpg'
             }
           ].map((service, i) => (
-            <div className="col-md-6 col-lg-3" key={i} data-aos="fade-up" data-aos-delay={i * 100}>
+            <div className="col-md-6 col-lg-6" key={i} data-aos="fade-up" data-aos-delay={i * 100}>
               <div className="card h-100 border-0 shadow-sm text-center">
                 {service.image && (
-                  <img src={`${process.env.PUBLIC_URL}${service.image}`} alt={service.title} className="card-img-top" style={{ height: '180px', objectFit: 'cover' }} />
+                  <img
+                    src={`${process.env.PUBLIC_URL}${service.image}`}
+                    alt={service.title}
+                    className="card-img-top"
+                    style={{ height: '180px', objectFit: 'cover' }}
+                  />
                 )}
                 <div className="card-body">
                   <i className={`bi ${service.icon} fs-2 text-primary mb-2`}></i>
@@ -58,7 +74,9 @@ const Services = () => {
 
         <div className="text-center mt-5" data-aos="fade-up">
           <h4 className="mb-3">Ready to get started?</h4>
-          <Link to="/booking" className="btn btn-primary btn-lg">Book a Service Today</Link>
+          <Link to="/booking" className="btn btn-primary btn-lg">
+            Book a Service Today
+          </Link>
         </div>
       </div>
     </div>
@@ -66,3 +84,4 @@ const Services = () => {
 };
 
 export default Services;
+
