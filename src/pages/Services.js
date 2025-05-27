@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const Services = () => {
@@ -57,7 +58,7 @@ const Services = () => {
 
         <div className="text-center mt-5" data-aos="fade-up">
           <h4 className="mb-3">Ready to get started?</h4>
-          <a href="/booking" className="btn btn-primary btn-lg">Book a Service Today</a>
+          <Link to="/booking" className="btn btn-primary btn-lg">Book a Service Today</Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const Testimonials = () => {
@@ -54,7 +55,7 @@ const Testimonials = () => {
 
         <div className="text-center mt-5">
           <h5>Experience the Bright Cleaning Services difference.</h5>
-          <a href="/booking" className="btn btn-primary mt-3">Book Now</a>
+          <Link to="/booking" className="btn btn-primary mt-3">Book Now</Link>
         </div>
 
         {/* Combined Review Section */}
@@ -105,7 +106,7 @@ const Testimonials = () => {
               <div className="bg-light p-4 rounded shadow h-100 d-flex flex-column justify-content-center align-items-center">
                 <p className="text-center mb-3">Prefer leaving your review on Google?</p>
                 <a
-  href="https://www.google.com/search?q=Bright+Cleaners+Montreal+reviews"
+  href="https://www.google.com/search?q=Services+de+Nettoyage+Bright+S.E.N.C.+reviews"
   target="_blank"
   rel="noopener noreferrer"
   className="btn btn-outline-secondary d-flex align-items-center gap-2"

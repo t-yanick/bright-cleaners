@@ -27,7 +27,7 @@ const ThankYou = () => {
       <div className="bg-light p-4 rounded shadow mt-5 mx-auto" style={{ maxWidth: "500px" }}>
         <p className="mb-3">Prefer leaving your review on Google?</p>
         <a
-          href="https://www.google.com/search?q=Bright+Cleaners+Montreal+reviews"
+          href="https://www.google.com/search?q=Services+de+Nettoyage+Bright+S.E.N.C.+reviews"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline-secondary d-flex align-items-center justify-content-center gap-2"

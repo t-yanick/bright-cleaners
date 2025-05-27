@@ -30,7 +30,7 @@ const Navbar = () => {
             alt="Bright Cleaning Services logo"
             style={{ height: '40px', width: '40px', objectFit: 'contain', marginRight: '10px' }}
           />
-          <span className="fw-bold text-primary">Bright Cleaning Services</span>
+          <span className="fw-bold text-primary">Services de Nettoyage Bright S.E.N.C.</span>
         </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

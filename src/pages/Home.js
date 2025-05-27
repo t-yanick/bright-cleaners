@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,7 +21,10 @@ const Home = () => {
         <div className="container">
           <h1 className="display-4 fw-bold">Shining Spaces, Spotless Results</h1>
           <p className="lead">Professional Residential & Commercial Cleaning Services in Montreal</p>
-          <a href="/booking" className="btn btn-primary btn-lg mt-3">Get a Free Quote</a>
+          
+          <Link to="/booking" className="btn btn-primary btn-lg mt-3">
+          Get a Free Quote
+          </Link>
         </div>
       </section>
 
@@ -97,7 +101,7 @@ const Home = () => {
       <section className="bg-primary text-white py-5 text-center" data-aos="fade-up">
         <div className="container">
           <h2 className="mb-3">Ready for a Cleaner Space?</h2>
-          <a href="/booking" className="btn btn-light btn-lg">Book Your Cleaning Today</a>
+          <Link to="/booking" className="btn btn-light btn-lg">Book Your Cleaning Today</Link>
         </div>
       </section>
 
